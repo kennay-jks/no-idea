@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+:root{
+    --base: #0e0d11;
+    --cor1: #FF3233;
+    --cor2: #FFA400;
+    --cor3: #0E6BA8;
+}
+
+*{
+    font: normal normal 1em monospace, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    background-color: var(--base);
+    color: #fff;
+}
+nav{
+    display: flex;
+    background-color: var(--cor1);
+    font-size: 1.4em;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #575757;
+    padding: 20px;
+}
+ul,li{
+    display: flex;
+    list-style: none;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+main{
+    margin: auto;
+}
+div > h2{
+    font-size: 1.2em;
+}
+section{
+    display: flex;
+    width: 80vw;
+    height: 26vh;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--cor2);
+    border-radius: 15px;
+    margin: 30px auto;
+}
+section h2{
+    font-size: 1.3em;
+}
+div{
+    border-radius: 4px;
+}
+.marie{
+    background: url(../imagens/fisica.jpg) center no-repeat;
+    background-size: cover;
+}
+.agatha{
+    background: url(../imagens/livros.jpg) center no-repeat;
+    background-size: cover;
+}
+.valentina{
+    background: url(../imagens/estaçao.jpg) center no-repeat;
+    background-size: cover;
+}
+.blur{
+    width: auto;
+    background-color: #0f0f0f94;
+    border: 0px;
+    padding: 20px;
+}
+.persona{
+    text-decoration: none;
+    color: #fff;
+}
+div:hover{
+    color: var(--cor3);
+    transition: 0.3s;
+}
