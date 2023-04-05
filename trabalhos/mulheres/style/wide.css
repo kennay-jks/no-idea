@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+:root{
+    --base: #0e0d11;
+    --cor1: #2CF6B3;
+    --cor2: #76F7CC;
+    --cor3: #23C28D;
+    --cor4: #157555;
+}
+#marie{
+    background: url(../images/fisica.jpg) bottom no-repeat;
+    background-size: cover;
+}
+.item{
+    width: 80vw;
+    height: 30vh;
+}
+.blur{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45vw;
+    
+}

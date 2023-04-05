@@ -2,9 +2,10 @@
 
 :root{
     --base: #0e0d11;
-    --cor1: #FF3233;
-    --cor2: #FFA400;
-    --cor3: #0E6BA8;
+    --cor1: #2CF6B3;
+    --cor2: #76F7CC;
+    --cor3: #23C28D;
+    --cor4: #157555;
 }
 
 *{
@@ -19,20 +20,15 @@ body{
     background-color: var(--base);
     color: #fff;
 }
-nav{
+header{
     display: flex;
-    background-color: var(--cor1);
+    background-color: var(--cor4);
     font-size: 1.4em;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 1px solid #575757;
+    border-bottom: 1px solid var(--cor3);
+    box-shadow: 0px 3px 5px #0000007a;
     padding: 20px;
-}
-ul,li{
-    display: flex;
-    list-style: none;
-    margin-left: 2vw;
-    margin-right: 2vw;
 }
 main{
     margin: auto;
@@ -40,32 +36,32 @@ main{
 div > h2{
     font-size: 1.2em;
 }
-section{
+.item{
     display: flex;
     width: 80vw;
     height: 26vh;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--cor2);
+    border: 1px solid var(--cor3);
     border-radius: 15px;
     margin: 30px auto;
 }
-section h2{
+.item h2{
     font-size: 1.3em;
 }
 div{
     border-radius: 4px;
 }
-.marie{
-    background: url(../imagens/fisica.jpg) center no-repeat;
+#marie{
+    background: url(../images/fisica.jpg) center no-repeat;
     background-size: cover;
 }
-.agatha{
-    background: url(../imagens/livros.jpg) center no-repeat;
+#agatha{
+    background: url(../images/livros.jpg) center no-repeat;
     background-size: cover;
 }
-.valentina{
-    background: url(../imagens/estaçao.jpg) center no-repeat;
+#valentina{
+    background: url(../images/estaçao.jpg) center no-repeat;
     background-size: cover;
 }
 .blur{
@@ -73,12 +69,13 @@ div{
     background-color: #0f0f0f94;
     border: 0px;
     padding: 20px;
+    backdrop-filter: blur(2px);
 }
 .persona{
     text-decoration: none;
     color: #fff;
 }
-div:hover{
-    color: var(--cor3);
+.item:hover{
+    color: var(--cor1);
     transition: 0.3s;
 }
