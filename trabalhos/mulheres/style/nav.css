@@ -14,7 +14,6 @@
     padding: 0;
     letter-spacing: 1px;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 body{
     background-color: var(--base);
@@ -67,8 +66,8 @@ nav{
         position: absolute;
         top: 8vh;
         right: 0;
-        width: 50vw;
-        height: 92vh;
+        width: 0vw;
+        height: 0vh;
         background: var(--cor4);
         flex-direction: column;
         align-items: center;
@@ -85,6 +84,8 @@ nav{
     }
 }
 .nav-list.active{
+    width: 50vw;
+    height: 92vh;
     transform: translateX(0);
 }
 
