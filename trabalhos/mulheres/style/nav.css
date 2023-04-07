@@ -87,6 +87,7 @@ nav{
     width: 50vw;
     height: 92vh;
     transform: translateX(0);
+    z-index: 2;
 }
 
 @keyframes navLinkFade{
@@ -111,3 +112,5 @@ nav{
 .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px );
 }
+
+/* kennay-jks */

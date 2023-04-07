@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+:root{
+    --base: #0e0d11;
+    --cor1: #2CF6B3;
+    --cor2: #76F7CC;
+    --cor3: #23C28D;
+    --cor4: #157555;
+}
+
+*{
+    font: normal normal 1em monospace, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    background-color: var(--base);
+    color: #fff;
+}
+.bio{
+    position: relative;
+    padding-bottom: 50%;
+    margin: 10px 0px;
+    z-index: 1;
+}
+.bio iframe{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    z-index: 1;
+}
+article{
+    width: 80vw;
+    border-top: 1px solid var(--cor3);
+    margin: auto;
+    margin-bottom: 30px;
+}
+.text{
+    padding: 0px 10px;
+    margin: 30px auto auto auto;
+}
+.img{
+    background: var(--base) url(../images/marie1-mob.jpg) center no-repeat fixed;
+    background-size: cover;
+    border-radius: 3px;
+    margin-top: 30px;
+    padding: 15px;
+}
+.img1{
+    background: var(--base) url(../images/marie2-mob.jpg) center no-repeat fixed;
+    background-size: cover;
+    border-radius: 3px;
+    margin-top: 30px;
+    padding: 15px;
+}
+.contain{
+    background: #0e0d11be;
+    border-radius: 3px;
+    box-shadow: 3px 3px 4px #0000006b;
+    padding: 15px;
+    backdrop-filter: blur(2px);
+}
+footer{
+    display: flex;
+    background: var(--cor4);
+    justify-content: space-around;
+    align-items: start;
+    box-shadow: -3px -3px 5px #00000098;
+    padding: 10px;
+}
+.ref{
+    margin: 8px 0px;
+}
+.ref img{
+    width: 8vw;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px #00000094;
+}
+.criador{
+    display: flex;
+    flex-direction: column;
+}
+.fonte{
+    display: flex;
+    flex-direction: column;
+}
