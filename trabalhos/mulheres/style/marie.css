@@ -45,14 +45,14 @@ article{
     margin: 30px auto auto auto;
 }
 .img{
-    background: var(--base) url(../images/marie1-mob.jpg) center no-repeat fixed;
+    background: var(--base) url(../images/persona/marie1-mob.jpg) center no-repeat fixed;
     background-size: contain;
     border-radius: 3px;
     margin-top: 30px;
     padding: 15px;
 }
 .img1{
-    background: var(--base) url(../images/marie2-mob.jpg) center no-repeat fixed;
+    background: var(--base) url(../images/persona/marie2-mob.jpg) center no-repeat fixed;
     background-size: contain;
     border-radius: 3px;
     margin-top: 30px;

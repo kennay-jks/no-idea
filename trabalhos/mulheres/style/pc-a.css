@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+:root{
+    --base: #0e0d11;
+    --cor1: #2CF6B3;
+    --cor2: #76F7CC;
+    --cor3: #23C28D;
+    --cor4: #157555;
+}
+
+*{
+    font: normal normal 1em monospace, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    background-color: var(--base);
+    color: #fff;
+}
+.bio{
+    position: relative;
+    padding-bottom: 28%;
+    margin: 10px 0px;
+    z-index: 1;
+}
+.bio iframe{
+    position: absolute;
+    top: -40%;
+    left: 0;
+    width: 50%;
+    height: 90%;
+    transform: translate(50%, 50%);
+    z-index: 1;
+}
+article{
+    width: 50vw;
+    border-top: 1px solid var(--cor3);
+    margin: auto;
+    margin-bottom: 30px;
+}
+.text{
+    padding: 0;
+}
+ article div{
+    padding: 0px 10px;
+    margin: 30px auto auto auto;
+}
+#img-pc{
+    width: auto;
+    height: 20vw;
+    background: var(--base) url(../images/persona/agatha1.jpg) center no-repeat fixed;
+    background-size: contain;
+}
+#img2-pc{
+    width: auto;
+    height: 20vw;
+    background: var(--base) url(../images/persona/agatha2.jpg) center no-repeat fixed;
+    background-size: contain;
+}
+.img{
+    background: url();
+    border-radius: 0px;
+    margin-top: 0px;
+    padding: 0px;
+}
+.img1{
+    background: url();
+    border-radius: 0px;
+    margin-top: 0px;
+    padding: 0px;
+}
+.contain{
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px ;
+    padding: 0px;
+    backdrop-filter: blur(px);
+}
+footer{
+    display: flex;
+    background: var(--cor4);
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: -3px -3px 5px #00000098;
+    padding: 5px;
+}
+footer h2{
+    font-size: 1.2em;
+}
+.ref{
+    margin: 8px 10px;
+}
+.ref img{
+    width: 2vw;
+}
+.criador{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.fonte{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
