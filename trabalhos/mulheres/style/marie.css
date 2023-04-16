@@ -40,6 +40,10 @@ article{
     margin: auto;
     margin-bottom: 30px;
 }
+h1::selection, h2::selection, p::selection{
+    background-color: #fff;
+    color: var(--base);
+}
 .text{
     padding: 0px 10px;
     margin: 30px auto auto auto;
@@ -70,7 +74,7 @@ footer{
     background: var(--cor4);
     justify-content: space-around;
     align-items: start;
-    box-shadow: -3px -3px 5px #00000098;
+    box-shadow: -3px -3px 5px #0000006c;
     padding: 10px;
 }
 .ref{
@@ -79,7 +83,6 @@ footer{
 .ref img{
     width: 8vw;
     border-radius: 50%;
-    box-shadow: 2px 2px 3px #00000094;
 }
 .criador{
     display: flex;
