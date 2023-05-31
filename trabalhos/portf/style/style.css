@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Ablation';
+    src: url('../font/Ablation.ttf'), format('truetype');
+    font-weight: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+html {
+    scrollbar-width: none;
+}
+body {
+    font-family: arial, helvetica,sans-serif;
+    background: #0a001d;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: #05000e;
+}
+.logo {
+    display: flex;
+    place-items: center;
+    cursor: pointer;
+}
+#logo {
+    font: normal normal 1.5em 'Ablation', arial, sans-serif;
+}
+#owl {
+    width: 35px;
+    margin: 10px;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+.nav > div {
+    background: #fff;
+    width: 1px;
+    margin: 4px;
+}
+/* menu */
+.line1 {
+    height: 20px;
+}
+.line2 {
+    height: 23px;
+}
+.line3 {
+    height: 24px;
+}
+.line4 {
+    height: 23px;
+}
+.line5 {
+    height: 20px;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+a:hover {
+    opacity: 0.7;
+}
+.in {
+    background: #05000e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50vw;
+    height: 100vh;
+    list-style: none;
+
+    position: absolute;
+    top: 12vw;
+    right: 0;
+
+    z-index: 999;
+}
+.in.active {
+    animation-name: slide;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+@keyframes slide {
+    to {
+        transform: translateX(0);
+    }
+}
+.id.deactivate {
+    animation-name: deactivate;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+@keyframes deactivate {
+    to {
+        transform: translateX(100%);
+    }
+}
