@@ -1,0 +1,23 @@
+.nav {
+    display: none;
+}
+.logo{
+    width: 40vw;
+    padding-left: 90px;
+}
+.in {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    justify-content: space-around;
+    width: 60vw;
+    height: auto;
+    padding-right: 40px;
+}
+.link::after, .link::before {
+    content: '|';
+    color: #202020;
+    width: 2px;
+    height: 20px;
+    margin: 10px;
+}
