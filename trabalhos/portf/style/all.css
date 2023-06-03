@@ -31,13 +31,6 @@ nav {
     place-items: center;
     cursor: pointer;
 }
-#logo {
-    font: normal normal 1.5em 'Ablation', arial, sans-serif;
-}
-#owl {
-    width: 35px;
-    margin: 10px;
-}
 a {
     text-decoration: none;
     color: #fff;

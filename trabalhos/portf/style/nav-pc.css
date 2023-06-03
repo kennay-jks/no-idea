@@ -5,6 +5,13 @@
     width: 40vw;
     padding-left: 90px;
 }
+#logo {
+    font: normal normal 1.5em 'Ablation', arial, sans-serif;
+}
+#owl {
+    width: 35px;
+    margin: 10px;
+}
 .in {
     display: flex;
     flex-direction: row;
