@@ -5,16 +5,23 @@
     src: url('../font/Ablation.ttf'), format('truetype');
     font-weight: normal;
 }
+:root {
+    --color1: #05000e;
+    --color2: #E3DBDB;
+    --color3: #ED1C24;
+    --color4: #FFC001;
+}
 * {
     font-family: monospace, arial, helvetica,sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     box-sizing: border-box;
+    color: #fff;
 }
-html {
+/* html {
     scrollbar-width: none;
-}
+} */
 body {
     background: #0a001d;
 }
@@ -24,7 +31,9 @@ nav {
     justify-content: space-around;
     align-items: center;
     background: #05000e;
+    width: 100vw;
     height: 9vh;
+    z-index: -1;
 }
 .logo {
     display: flex;
@@ -39,4 +48,30 @@ a {
 }
 a:hover {
     opacity: 0.7;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin: auto;
+    height: 100vh;
+}
+.present {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background: var(--color3);
+    width: 900px;
+    height: 500px;
+    padding: 50px;
+}
+.present h1 {
+    font-size: 2.5em;
+}
+.present p {
+    font-size: 1em;
 }
