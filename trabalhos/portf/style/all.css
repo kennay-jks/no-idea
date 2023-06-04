@@ -19,21 +19,23 @@
     box-sizing: border-box;
     color: #fff;
 }
-/* html {
+html {
     scrollbar-width: none;
-} */
+}
 body {
-    background: #0a001d;
+    background: #0a001d url('../image/baka2.jpg') center no-repeat fixed ;
+    background-size: cover;
+    backdrop-filter: blur(5px);
 }
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background: #05000e;
+    background: #05000ee3;
     width: 100vw;
     height: 9vh;
-    z-index: -1;
+    z-index: 99;
 }
 .logo {
     display: flex;
@@ -51,7 +53,7 @@ a:hover {
 }
 section{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -64,14 +66,55 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    background: var(--color3);
+    /* background: var(--color3); */
     width: 900px;
     height: 500px;
     padding: 50px;
 }
 .present h1 {
-    font-size: 2.5em;
+    font-size: 2.8em;
+    text-shadow: 2px 2px 3px #00000071;
 }
 .present p {
-    font-size: 1em;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 3px #00000071;
 }
+::selection{
+    background: var(--color2);
+    color: var(--color1);
+}
+.down {
+    padding: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    background: #05000eb4;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0px auto;
+}
+.seta {
+    background: #fff;
+    width: 1px;
+    height: 20px;
+    margin: auto;
+}
+.s1 {
+    transform: rotate(-45deg);
+    margin-right: 6px;
+}
+.s2 {
+    transform: rotate(45deg);
+    margin-left: 6px;
+}
+/* .down.float {
+    animation: float 1s backwards;
+    animation-iteration-count: infinite;
+}
+@keyframes float {
+    to {
+        top: -25px;
+    }
+} */
