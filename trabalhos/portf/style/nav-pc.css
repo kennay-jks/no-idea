@@ -1,5 +1,5 @@
 nav {
-    position: fixed;
+    position: absolute;
 }
 .nav {
     display: none;

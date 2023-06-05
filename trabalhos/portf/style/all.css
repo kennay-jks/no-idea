@@ -35,12 +35,13 @@ nav {
     background: #05000ee3;
     width: 100vw;
     height: 9vh;
-    z-index: 99;
+    z-index: 999;
 }
 .logo {
     display: flex;
     place-items: center;
     cursor: pointer;
+    transition: .3s;
 }
 a {
     text-decoration: none;
@@ -48,7 +49,37 @@ a {
     transition: .3s;
     letter-spacing: 3px;
 }
-a:hover {
+.link {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 0px 2px;
+}
+.link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 0px;
+    height: 3px;
+    background: var(--color4);
+    transition: width 0.3s;
+}
+.link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0px;
+    height: 3px;
+    background: var(--color4);
+    transition: width 0.3s;
+}
+.link:hover::after, .link:hover::before {
+    width: 100%;
+}
+.logo:hover {
     opacity: 0.7;
 }
 section{
@@ -61,7 +92,7 @@ section{
     margin: auto;
     height: 100vh;
 }
-.present {
+.present, .about {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,7 +115,8 @@ section{
     color: var(--color1);
 }
 .down {
-    padding: absolute;
+    cursor: pointer;
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-items: center;
@@ -94,6 +126,10 @@ section{
     height: 50px;
     border-radius: 50%;
     margin: 0px auto;
+    transition: .1s;
+}
+.down:hover {
+    transform: scale(1.1);
 }
 .seta {
     background: #fff;
@@ -109,12 +145,17 @@ section{
     transform: rotate(45deg);
     margin-left: 6px;
 }
-/* .down.float {
-    animation: float 1s backwards;
-    animation-iteration-count: infinite;
+.down.float {
+    animation: float 1.5s linear infinite forwards;
 }
 @keyframes float {
-    to {
-        top: -25px;
+    0% {
+        top: 0px;
     }
-} */
+    50% {
+        top: -8px;
+    }
+    100% {
+        top: 0px;
+    }
+}

@@ -25,6 +25,7 @@ nav {
     align-items: center;
     background: #05000ee3;
     height: 9vh;
+    z-index: 998;
 }
 .logo {
     display: flex;
@@ -181,12 +182,6 @@ a:hover {
     }
 }
 
-.ap.active{
-    animation-name: lin;
-    animation-duration: .3s;
-    animation-fill-mode: forwards;
-    animation-delay: .4s;
-}
 .nk1.active{
     animation-name: lin;
     animation-duration: .3s;

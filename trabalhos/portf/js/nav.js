@@ -4,7 +4,6 @@ let nk1 = document.querySelector('.nk1')
 let nk2 = document.querySelector('.nk2')
 let nk3 = document.querySelector('.nk3')
 let nk4 = document.querySelector('.nk4')
-let ap = document.querySelector('.ap')
 
 nav.addEventListener('click', () => {
     if (id.classList.contains('active')) {
@@ -17,7 +16,6 @@ nav.addEventListener('click', () => {
         nk2.classList.remove('active')
         nk3.classList.remove('active')
         nk4.classList.remove('active')
-        ap.classList.remove('active')
         //console.log('dea')
     } else {
         id.classList.remove('dea')
@@ -29,7 +27,6 @@ nav.addEventListener('click', () => {
         nk2.classList.add('active')
         nk3.classList.add('active')
         nk4.classList.add('active')
-        ap.classList.add('active')
         //console.log('act')
     }
 })
