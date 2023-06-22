@@ -1,0 +1,22 @@
+.pre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0px 10px;
+}
+.pre h1 {
+    font-size: 1.8em;
+}
+.comp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.down {
+    cursor: pointer;
+    position: fixed;
+    left: 83vw;
+    top: 88vh;
+}

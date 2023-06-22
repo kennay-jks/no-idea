@@ -1,5 +1,13 @@
 nav {
     position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: #05000ee3;
+    width: 100vw;
+    height: 9vh;
+    z-index: 999;
 }
 .nav {
     display: none;

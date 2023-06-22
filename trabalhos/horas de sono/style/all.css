@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+* {
+    font-family: monospace, arial, helvetica,sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    color: #fff;
+}
+html {
+    scrollbar-width: none;
+}
+body {
+    background: #0a001d url('../image/art.jpg') center no-repeat fixed ;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin: auto;
+    height: 100vh;
+}
+section {
+    background: #277a1fd0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    border: 1px solid #0A140E;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 4px 4px 7px #00000075;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+input {
+    background: #0A140E;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+#hours {
+    appearance: textfield;
+    -moz-appearance: textfield;
+    width: 30px;
+}
+#verify {
+    width: 100px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.quest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 15px;
+}
+.res {
+    min-height: 50px;
+    min-width: 150px;
+    max-width: 300px;
+    border: 1px solid #0A140E;
+    box-shadow: 3px 3px 5px #00000035, -3px -3px 5px #00000035;
+    padding: 10px;
+}
+::selection {
+    color: #0A140E;
+    background: #d3d3d3;
+}

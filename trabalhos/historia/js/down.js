@@ -1,5 +1,4 @@
 let down = document.querySelectorAll('.down')
-let up = document.querySelectorAll('.up')
 
 window.addEventListener('load', () => {
     down.forEach((down) => {
@@ -33,12 +32,4 @@ down.forEach((rdown) => {
             })
         }
     })    
-})
-up.forEach((rup) => {
-    rup.addEventListener('click', () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        })
-    })
 })
