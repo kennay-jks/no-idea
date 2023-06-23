@@ -16,15 +16,16 @@
     font-weight: normal;
     letter-spacing: 1px;
 }
-/* html {
+html {
     scrollbar-width: none;
-} */
+}
 ::selection {
     color: var(--cor1);
     background: var(--cor3);
 }
 body {
-    background: #07050f;
+    background: #07050f url('../image/funda.jpg') center no-repeat fixed;
+    background-size: cover;
 }
 section {
     display: flex;
@@ -79,6 +80,7 @@ section {
 .pre h1 {
     font-size: 2.3em;
     margin-right: 10px;
+    text-shadow: 2px 2px 3px #000000af;
 }
 .pre {
     padding-top: 80px;
@@ -98,6 +100,9 @@ section {
     width: 80vw;
     height: 30vh;
 }
+.comp p {
+    text-shadow: 1px 1px 2px #0000009c;
+}
 div {
     display: flex;
     flex-direction: column;
@@ -106,4 +111,88 @@ div {
 }
 img {
     width: 400px;
+}
+.ind {
+    flex-direction: row;
+    gap: 100px;
+}
+.grup {
+    background: url('../image/povo.jpg') center no-repeat fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    border: 1px solid var(--cor2);
+    border-radius: 8px;
+    box-shadow: 4px 4px 7px #0000007c;
+    overflow: hidden;
+}
+.conte {
+    position: relative;
+    top: 100%;
+    background: #07050fe3;
+    padding: 20px;
+    transition: .3s;
+}
+.grup:hover .conte {
+    top: 0;
+}
+.nome {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.soft {
+    flex-direction: row;
+    max-width: 900px;
+    gap: 50px;
+}
+.fotos {
+    background: url('../image/pedra1.jpg') center no-repeat;
+    background-size: cover;
+    max-width: 700px;
+    height: 400px;
+    justify-content: end;
+    border-radius: 10px;
+    margin: 70px 50px;
+    overflow: hidden;
+    transition: .3s;
+    box-shadow: 5px 5px 7px #0000007c;
+}
+.fotos p {
+    font-size: 1.1em;
+}
+.sobre {
+    background: #07050fe3;
+    padding: 30px;
+    position: relative;
+    top: 100%;
+    transition: .3s;
+}
+.fotos:hover .sobre {
+    top: 0;
+}
+.fotos:hover {
+    transform: scale(1.1);
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 8vh;
+    background-color: #07050fe3;
+}
+.star {
+    justify-content: start;
+}
+.f1 {
+    background: url('../image/xique-xique.jpg') center no-repeat;
+    background-size: cover;
+}
+.f2 {
+    background: url('../image/lajedo.jpg') center no-repeat;
+    background-size: cover;
 }
