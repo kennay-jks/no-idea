@@ -34,7 +34,6 @@ section {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    border-bottom: 1px solid #EFF9F0;
 }
 .down {
     display: flex;
@@ -52,6 +51,17 @@ section {
     z-index: 999;
     border-radius: 50%;
 }
+.view {
+    cursor: pointer;
+    position: fixed;
+    left: 5vw;
+    top: 91vh;
+    z-index: 998;
+}
+.view p {
+    text-decoration: underline;
+    color: var(--cor3);
+}
 .seta {
     background: #000;
     width: 1px;
@@ -67,6 +77,39 @@ section {
     animation-iteration-count: infinite;
 }
 @keyframes float {
+    0% {
+        top: 88vh;
+    }
+    50% {
+        top: 89vh;
+    }
+    100% {
+        top: 88vh;
+    }
+}
+@-moz-keyframes float {
+    0% {
+        top: 88vh;
+    }
+    50% {
+        top: 89vh;
+    }
+    100% {
+        top: 88vh;
+    }
+}
+@-webkit-keyframes float {
+    0% {
+        top: 88vh;
+    }
+    50% {
+        top: 89vh;
+    }
+    100% {
+        top: 88vh;
+    }
+}
+@-o-keyframes float {
     0% {
         top: 88vh;
     }
@@ -112,12 +155,14 @@ div {
 img {
     width: 400px;
 }
-.ind {
+.arrow {
     flex-direction: row;
     gap: 100px;
+    width: 100%;
+    height: 100%;
 }
 .grup {
-    background: url('../image/povo.jpg') center no-repeat fixed;
+    background: url('../image/povo.jpg') center top no-repeat fixed;
     background-size: cover;
     display: flex;
     justify-content: end;
@@ -129,12 +174,22 @@ img {
     box-shadow: 4px 4px 7px #0000007c;
     overflow: hidden;
 }
+.tit {
+    background: #07050fe3;
+    width: 100%;
+    height: 10%;
+    padding: 3px;
+}
 .conte {
     position: relative;
     top: 100%;
     background: #07050fe3;
+    height: 90%;
     padding: 20px;
     transition: .3s;
+}
+.conte.active {
+    top: 0;
 }
 .grup:hover .conte {
     top: 0;
@@ -150,7 +205,7 @@ img {
     gap: 50px;
 }
 .fotos {
-    background: url('../image/pedra1.jpg') center no-repeat;
+    background: url('../image/lajedo.jpg') center no-repeat;
     background-size: cover;
     max-width: 700px;
     height: 400px;
@@ -168,8 +223,12 @@ img {
     background: #07050fe3;
     padding: 30px;
     position: relative;
+    height: 100%;
     top: 100%;
     transition: .3s;
+}
+.sobre.active {
+    top: 0;
 }
 .fotos:hover .sobre {
     top: 0;
@@ -184,6 +243,7 @@ header {
     width: 100vw;
     height: 8vh;
     background-color: #07050fe3;
+    box-shadow: 3px 3px 5px #0000007c;
 }
 .star {
     justify-content: start;
@@ -193,6 +253,41 @@ header {
     background-size: cover;
 }
 .f2 {
-    background: url('../image/lajedo.jpg') center no-repeat;
+    background: url('../image/pedra1.jpg') center no-repeat;
     background-size: cover;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vid {
+    background: #07050f42;
+    width: 700px;
+    height: 400px;
+    position: relative;
+}
+@media screen and (max-width: 850px) {
+    .vid {
+        width: 550px;
+        height: 310px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .vid {
+        width: 350px;
+        height: 200px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .vid {
+        width: 250px;
+        height: 150px;
+        border-radius: 7px;
+    }
+}
+.vid iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
 }

@@ -7,7 +7,7 @@ window.addEventListener('load', () => {
 })
 
 down.forEach((rdown) => {
-    rdown.addEventListener('click', function() {
+    rdown.addEventListener('click', () => {
         let sections = document.querySelectorAll('section')
     
         let nextSection = null
